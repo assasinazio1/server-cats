@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "b6613de0-ecfe-4704-ac6c-263a79365bef",
+		"name": "cats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cat/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"barsik\",\r\n    \"is_strip\": true,\r\n    \"color\": \"orange\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/cat/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"cat",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cat/:id/edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"barsik\",\r\n    \"is_strip\": true,\r\n    \"color\": \"orange\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/cat/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"cat",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/cats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"cats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cat/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/cat/e7bef0c4-8749-4069-86ba-85422b16663d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"cat",
+						"e7bef0c4-8749-4069-86ba-85422b16663d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cat/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/cat/e7bef0c4-8749-4069-86ba-85422b16663d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"cat",
+						"e7bef0c4-8749-4069-86ba-85422b16663d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
