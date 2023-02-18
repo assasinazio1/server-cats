@@ -6,3 +6,4 @@ go get github.com/google/uuid
 
 go run . 
 go build .# API_Go
+ctrl + C - отмена
